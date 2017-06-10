@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<VBox fx:controller="View.FXMLDocumentController"  prefWidth="600" prefHeight="600"
+    spacing ="20"
+    xmlns:fx="http://javafx.com/fxml/1" 
+    styleClass="root">
+     <stylesheets>
+      <URL value="@login.css" />
+    </stylesheets>
+    <padding><Insets top="25" right="25" bottom="25" left="25"/></padding>
+
+ 
+   
+    <Label text="User Name:"
+      />
+ 
+    <TextField fx:id="userName"
+        />
+ 
+    <HBox spacing="10" alignment="bottom_right" 
+     >
+        <Button text="Sign In"     
+        onAction="#handleButtonAction"/>
+    </HBox>
+    
+     <HBox spacing="10" alignment="bottom_right" 
+        >
+        <Button text="Sign Up"     
+        onAction="#handleSignUpAction"/>
+    </HBox>
+
+    <Label fx:id="label"
+      />
+        
+
+</VBox>
